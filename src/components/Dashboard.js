@@ -177,21 +177,8 @@ const Dashboard = () => {
         <Typography variant="body2" sx={{ mt: 4, color: "#999" }}>
           FHIR Dashboard ©2024 Created by 8people
         </Typography>
-        <Typography variant="body2" sx={{ color: "#999" }}>
-          Using HL7 FHIR Standards, UCL CS COMP0016 Project for GOSH DEIVE and
-          NHS England
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{
-            mt: 2,
-            color: "#009",
-            cursor: "pointer",
-            textDecoration: "underline",
-          }}
-        >
-          Click here to clear local FHIR data cache
-        </Typography>
+
+
       </Box>
     </Box>
   );

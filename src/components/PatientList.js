@@ -85,6 +85,12 @@ const PatientList = () => {
       ); // Send to FHIR Server
       console.log("Order sent to FHIR Server:", orderData);
       console.log("Response:", response.data);
+      const lmsResponse = await axios.post(
+          "http://localhost:3001/api/orders", // LMS endpoint
+          orderData
+      );
+      console.log("Order sent to LMS:", orderData);
+      console.log("LMS Response:", lmsResponse.data);
       setOpenDialog(false);
     } catch (error) {
       console.error("Error sending order:", error);
